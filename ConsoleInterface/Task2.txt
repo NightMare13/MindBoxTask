@@ -1,0 +1,20 @@
+﻿// Product
+// Id
+// Name
+
+// Category
+// Id
+// Name
+
+//ProductCategory
+//Id
+//ProductId
+//CategoryId
+
+SELECT distinct p.Name, c.Name
+FROM
+	Product p left  join ProductCategory pc on p.Id = pc.ProductId
+					join Category c on pc.CategoryId = c.Id
+	
+
+
